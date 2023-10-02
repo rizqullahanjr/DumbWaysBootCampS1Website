@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>My Project</title>
+        <link rel="stylesheet" href="./css/project.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li>
+                        <img src="image/sdvx-icon.png" alt="logo" width="50px"/>
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">My Project</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="section-one">
+            <div class="container">
+                <div class="form-title">
+                    <h2>ADD MY PROJECT</h2>
+                </div>
+                <div class="form-container">
+                    <form onsubmit="
+                        addMyProject(event);">
+                        <div>
+                            <label for="nama-project">Project Name</label>
+                        </div>
+                        <div class="project-name">
+                            <input type="text" id="nama-project">
+                        </div>
+                        <div class="project-time">
+                            <div>
+                            <label for="start-date">Start Date</label>
+                            <input type="date" id="start-date">
+                            </div>
+                            <div>
+                            <label for="end-date">End Date</label>
+                            
+                            <input type="date" id="end-date">
+                            </div>
+                         </div>
+        
+                         <div>
+                            <label for="desc-project">Description</label>
+                        </div>
+                        <div>
+                            <textarea class="desc-project" id="desc-project"></textarea>
+                        </div>
+        
+                            <div>
+                                <div><label>Technologies</label></div>
+        
+                                <div class="tech-option">
+                                    <div>
+                                        <div>
+                                            <input type="checkbox" name="tech" id="option-1" value="nodejs">
+                                        <label for="option-one">Node Js</label>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" name="tech" id="option-2" value="nextjs">
+                                        <label for="option-one">Next Js</label>
+                                        </div>
+                                    </div>
+        
+                                    <div>
+                                        <div>
+                                        <input type="checkbox" name="tech" id="option-3" value="reactjs">
+                                        <label for="option-one">React Js</label>
+                                        </div>
+                                        <div>
+                                        <input type="checkbox" name="tech" id="option-4" value="typescript">
+                                        <label for="option-one">Typescript</label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>                      
+                            </div>
+        
+                            <div>
+                                <div>
+                                    <label>Upload image</label>
+                                </div>
+                                <div>
+                                    <label class="input-blog-image">
+                                        <div class="text">Choose</div>
+                                        <div>
+                                        <img src="./image/sdvx-icon.png" width=20px>
+                                        <input type="file"  id="input-blog-image" hidden >
+                                        </div>
+                                        
+                                </label>
+                                </div>
+                            </div>
+        
+                            <div class="submit-button-container">
+                                <div><button class="submit-button" 
+                                    >Submit</button></div>
+                            </div>
+        
+                    </form>
+        
+                </div>
+            </div>
+        </div>        
+                <hr/>
+                <div id="contents" class="project-list">
+                    <div>
+                        <div class="project-image">
+                            <img src="" alt="">
+                    </div>
+                    <div>
+                        <button class="btn-edit">edit post</button>
+                        <button class="btn-post">delete post</button>
+                    </div>
+                    <h1>
+                        <a href="project-detail.html">
+                            pasar coding di indonesia dinilai masih menjanjikan
+                        </a>
+                    </h1>
+                    <div class="detail-project-content">
+                        12 jul 2021 22:30 | John Doe
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, atque.
+                    </p>
+                </div>
+            </div>
+    </body>
+    <script src="./js/project.js"></script>
+</html>
